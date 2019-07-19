@@ -2,6 +2,7 @@ package executie;
 
 
 import entitati.Client;
+import entitati.Magazin;
 
 import java.util.HashMap;
 
@@ -11,6 +12,7 @@ public class Executie {
     public static void main (String args[]) {
 
         HashMap<String, Integer> cosCumparaturi = new HashMap<>();
+        Magazin c = new Magazin();
 
     /*Magazin Surubel = new Magazin();
     Surubel.generateRandomStoreName();
