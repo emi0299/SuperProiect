@@ -191,5 +191,26 @@ public class Client extends Produs {
         }
         System.out.println("Clientul " + client.numeClient + " are o valoare de discount generala de " + this.valoareDiscountPersoanaJuridica);
 
+
+
+
+
+
     }
+    public void cumparaCosCumparaturi (HashMap<String, Integer> cosCumparaturi) {
+
+        if (new Magazin().interogareStoc(cosCumparaturi)){
+            for (Map.Entry i : cosCumparaturi.entrySet()) {
+                System.out.println("Produsul  " + i.getKey() + " a fost cumparat in cantiatea de " + i.getValue());
+            }
+
+
+        }
+
+    }
+
+
+
+
+
 }
